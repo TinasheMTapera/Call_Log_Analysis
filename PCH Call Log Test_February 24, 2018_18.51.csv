@@ -1,0 +1,69 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,start_date,start_time_1,start_time_2,start_time_3,end_date,end_time_1,end_time_2,end_time_3,primary,secondary,answer,ask_student,m_f,m_f_3_TEXT,Q22,student,primary_issues,secondary_issues,body,skills,skills_7_TEXT,skills_8_TEXT,marketing,marketing_8_TEXT,referrals,referrals_7_TEXT,referrals_8_TEXT,couns_opinion
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Call Start Date: 
+ 
+ 
+ 
+
+
+
+Qualtrics.SurveyEngine.addOnload(function ()
+{
+  var qid = this.questionId;
+  var calid = qid + '_cal';
+  var y = QBuilder('div');
+  $(y).setStyle({clear:'both'});
+  var d = QBuilder('div',{className:'yui-skin-sam'},[
+    QBuilder('div', {id:calid}),
+    y
+  ]);
+  
+  var c = this.questionContainer;
+  c = $(c).down('.QuestionText');
+  c.appendChild(d);
+  var cal1 = new YAHOO.widget.Calendar(calid); 
+  cal1.render(); 
+  var input = $('QR~' + qid);
+  $(input).setStyle({marginTop: '20px',width: '150px'});
+  var p =$(input).up();
+  var x = QBuilder('div');
+  $(x).setStyle({clear:'both'});
+  p.insert(x,{position:'before'});
+    cal1.selectEvent.subscribe(function(e,dates){
+    var date = dates[0][0];
+    if (date[1]",Call Start Time: - Hour,Call Start Time: - Minute,Call Start Time: - am/pm,"Call End Date: 
+ 
+ 
+ 
+
+
+
+Qualtrics.SurveyEngine.addOnload(function ()
+{
+  var qid = this.questionId;
+  var calid = qid + '_cal';
+  var y = QBuilder('div');
+  $(y).setStyle({clear:'both'});
+  var d = QBuilder('div',{className:'yui-skin-sam'},[
+    QBuilder('div', {id:calid}),
+    y
+  ]);
+  
+  var c = this.questionContainer;
+  c = $(c).down('.QuestionText');
+  c.appendChild(d);
+  var cal1 = new YAHOO.widget.Calendar(calid); 
+  cal1.render(); 
+  var input = $('QR~' + qid);
+  $(input).setStyle({marginTop: '20px',width: '150px'});
+  var p =$(input).up();
+  var x = QBuilder('div');
+  $(x).setStyle({clear:'both'});
+  p.insert(x,{position:'before'});
+    cal1.selectEvent.subscribe(function(e,dates){
+    var date = dates[0][0];
+    if (date[1]",End time - Hour,End time - Minute,End time - am/pm,Primary Counselor First name and Last name:,Secondary Counselor First name and Last name:,Did you answer the phone?,Did the caller respond when you asked if they were a Drexel student?,Was the caller a male or female? - Selected Choice,Was the caller a male or female? - Other - Text,Were they a repeat caller?,Was the caller a Drexel student?,Primary issues,Secondary issues,Body of the call,What skills were used? - Selected Choice,What skills were used? - Other - Text,What skills were used? - Other - Text,How did the caller hear about the helpline? - Selected Choice,How did the caller hear about the helpline? - Other - Text,What referrals were made? - Selected Choice,What referrals were made? - Other - Text,What referrals were made? - Other - Text,"You may add any notes you would like to bring up at the next meeting such as: how you felt about the call, improvements that could be made, training suggestions, and more. (survey will end after this)"
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID38_TEXT""}","{""ImportId"":""QID40_1""}","{""ImportId"":""QID40_2""}","{""ImportId"":""QID40_3""}","{""ImportId"":""QID39_TEXT""}","{""ImportId"":""QID19_1""}","{""ImportId"":""QID19_2""}","{""ImportId"":""QID19_3""}","{""ImportId"":""QID34_TEXT""}","{""ImportId"":""QID35_TEXT""}","{""ImportId"":""QID33""}","{""ImportId"":""QID4""}","{""ImportId"":""QID8""}","{""ImportId"":""QID8_3_TEXT""}","{""ImportId"":""QID30""}","{""ImportId"":""QID6""}","{""ImportId"":""QID9_TEXT""}","{""ImportId"":""QID12_TEXT""}","{""ImportId"":""QID13_TEXT""}","{""ImportId"":""QID16""}","{""ImportId"":""QID16_7_TEXT""}","{""ImportId"":""QID16_8_TEXT""}","{""ImportId"":""QID41""}","{""ImportId"":""QID41_8_TEXT""}","{""ImportId"":""QID42""}","{""ImportId"":""QID42_7_TEXT""}","{""ImportId"":""QID42_8_TEXT""}","{""ImportId"":""QID20_TEXT""}"
+2018-02-24 18:45:46,2018-02-24 18:47:35,Survey Preview,,100,108,True,2018-02-24 18:47:35,R_06CkdRy09Em91RL,,,,,39.959701538086,-75.196800231934,preview,EN,02-24-2018,11,2,pm,02-24-2018,12,4,pm,Primary Counselor,Secondary Counselor,Yes,Yes,Female,,No,Yes,Primary issues,secondary issues,body of call,"Validation,Normalization,Problem Solving",,,Posters,,Counseling Center,,,notes for training
+2018-02-24 18:47:40,2018-02-24 18:49:05,Survey Preview,,100,84,True,2018-02-24 18:49:05,R_2AZs2obZ608bbPt,,,,,39.959701538086,-75.196800231934,preview,EN,02-15-2018,8,5,pm,02-15-2018,9,41,pm,Primary,Secondary,Yes,Yes,Female,,Yes,Yes,primary issues,secondary issues,body of call,"Problem Solving,Silence,Redirection",,,Did not ask/unknown,,No referrals made,,,notes for training
+2018-02-24 18:49:08,2018-02-24 18:50:35,Survey Preview,,100,87,True,2018-02-24 18:50:35,R_3HTwErx2KCxbt1l,,,,,39.959701538086,-75.196800231934,preview,EN,02-08-2018,11,35,pm,02-09-2018,12,20,am,test,test,Yes,Yes,Male,,No,Yes,test,test,test,"Problem Solving,Silence",,,Chalk the walk,,"Counseling Center,Philadelphia Crisis Hotline,On Call Counselor",,,test
+2018-02-24 18:50:38,2018-02-24 18:51:15,Survey Preview,,100,37,True,2018-02-24 18:51:16,R_1LNZMjEEnAOMC4W,,,,,39.959701538086,-75.196800231934,preview,EN,02-22-2018,9,0,pm,02-22-2018,9,0,pm,test,test,Yes,No (survey will end),,,,,,,,,,,,,,,,
